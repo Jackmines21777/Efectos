@@ -1,0 +1,23 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section img {
+    width: 0%;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    margin: auto;
+    /* filter: grayscale(100%); */
+}
+
+section img:hover{
+    cursor: pointer;
+    width: 10%;
+    opacity: 1;
+    filter: grayscale(0%);
+    /* filter: contrast(120%); */
+
+}

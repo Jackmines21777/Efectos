@@ -1,0 +1,17 @@
+@if(isLoggedIn) {
+    
+} @else {
+    <div class="welcome" class="p-5">
+        <div class="title">
+            <p class="text-center font-bold text-5xl pt-2">Bienvenido</p>
+        </div>
+        <div class="content" class="text-center p-5">
+            <span>¿Desea iniciar sesion?</span>
+            <!-- <p>¿Desea iniciar sesion?</p> -->
+            <button (click)="toRouteRegister()"
+            (click)="isLoggedIn=true"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold p-2 rounded">¡Click!</button>
+        </div>
+    </div>
+
+}

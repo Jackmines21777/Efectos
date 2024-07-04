@@ -1,0 +1,24 @@
+<section>
+    <ul>
+        <li><a href="#">CPU</a><img class="image" src="../assets/cpu.png"></li>
+        <li><a href="#">Monitor</a><img class="image" src="../assets/monitor.png"></li>
+        <li><a href="#">Match</a><img class="image" src="../assets/strongCristal.jpg"></li>
+        <li><a href="#">Monitor</a><img class="image" src="../assets/monitor.png"></li>
+        <li><a href="#">CPU</a><img class="image" src="../assets/cpu.png"></li>
+    </ul>
+</section>
+
+<script>
+    let image = document.querySelectorAll('.image');
+
+    function showImage(e) {
+        for (var i = 0; i < image.length; i++) {
+            x=e.pageX;
+            y=e.pageY;
+            image[i].style.transform = `translate(${x}px, ${y}px)`;
+        }
+    }
+    document.addEventListener('mousemove',showImage);
+
+
+</script>
